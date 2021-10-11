@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+html {
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    margin: 0px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px 40px 20px;
+    background-color: hsl(226, 43%, 10%);
+    color: white;
+}
+
+.user {
+    width: 80%;
+}
+.dashboard {
+    width: 80%;
+    margin: 25px 0px 0px 0px;
+}
+.profile {
+    display: flex;
+    background-color: hsl(235, 45%, 61%);
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+    z-index: 1;
+}
+.profile p {
+    margin: 5px 0px 0px 10px;
+    display: inline-block;
+    font-size: 80%;
+}
+#name {
+    font-size: 150%;
+}
+.profile img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 40px;
+}
+.time-frame {
+    display: grid;
+    font-size: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: -15px 0px 0px 0px;
+    background-color:   hsl(235, 46%, 20%);
+    padding : 30px 20px 20px 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.time-frame span {
+    color: white;
+}
+.dots {
+    background-image: url('images/icon-ellipsis.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+}
+
+.common {
+    margin: 5px 0px 0px 0px;
+}
+.bottom  {
+    background-color: hsl(235, 46%, 20%);
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    top: -20px;
+    cursor: pointer;
+}
+.bottom:hover{
+    background-color: hsl(235, 45%, 61%) ;
+}
+.top{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    position: static;
+    z-index: -1;
+}
+#current {
+    font-size: 200%;
+    width: 50%;
+}
+.adjust {
+    width: 100%;
+}
+#previous {
+    display: inline-block;
+    font-weight: 300;
+    position: relative;
+    top: 10px;
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+#daily, #weekly, #monthly {
+    cursor: pointer;
+    font-weight: 300;
+}
+#daily:active, #weekly:active, #monthly:active {
+    font-weight: 700;
+}
+#daily:hover, #weekly:hover, #monthly:hover {
+    font-weight: 700;
+}
+#work .top {
+    background-image: url('images/icon-work.svg');
+    background-repeat: no-repeat;
+    background-position: 95% 100%;
+    background-color:  hsl(15, 100%, 70%);
+    background-size: 55px;
+}
+#play .top {
+    background-image: url('images/icon-play.svg');
+    background-repeat: no-repeat;
+    background-position: 95% 100%;
+    background-color: hsl(195, 74%, 62%);
+    background-size: 55px;
+}
+#study .top {
+    background-image: url('images/icon-study.svg');
+    background-repeat: no-repeat;
+    background-position: 95% 100%;
+    background-color: hsl(348, 100%, 68%);
+    background-size: 55px;
+}
+#exercise .top {
+    background-image: url('images/icon-exercise.svg');
+    background-repeat: no-repeat;
+    background-position: 95% 40%;
+    background-color: hsl(145, 58%, 55%);
+    background-size: 50px;
+}
+#social .top {
+    background-image: url('images/icon-social.svg');
+    background-repeat: no-repeat;
+    background-position: 95% 95%;
+    background-color: hsl(264, 64%, 52%);
+    background-size: 55px;
+}
+#self-care .top {
+    background-image: url('images/icon-self-care.svg');
+    background-repeat: no-repeat;
+    background-position: 95% 0%;
+    background-color: hsl(43, 84%, 65%);
+    background-size: 40px;
+}
+@media screen and (min-width: 800px) {
+    html{
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+    .user {
+        max-width: 170.8/px;
+    }
+    .user img {
+        margin: 0px 0px 20px 0px;
+    }
+    #name {
+        font-size: 25px;
+    }
+    .common {
+        margin: 0px 0px 0px 0px;
+    }
+    .profile {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px 40px 20px;
+    }
+    .user .time-frame {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .dashboard {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: 0px 10px
+    }
+    #previous {
+        display: block;
+        font-weight: 300;
+        position: unset;
+        top: 10px;
+        float: unset;
+        width: 100%;
+        text-align: unset;
+    }
+}

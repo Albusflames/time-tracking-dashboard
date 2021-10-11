@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="user">
+        <section class="profile">
+          <img src="images/image-jeremy.png" alt="Jeremy image" />
+          <p>
+            Report for <br />
+            <span id="name">Jeremy Robson </span>
+          </p>
+        </section>
+
+        <section class="time-frame">
+          <span id="daily">Daily</span> <span id="weekly">Weekly</span>
+          <span id="monthly">Monthly</span>
+        </section>
+      </div>
+      <div class="dashboard">
+      
+        <div class="common" id="work">
+          <div class='top'></div>
+          <div class='bottom'>
+          <p class='dots'>Work</p>
+          
+        <p class='adjust'><span id='current'>---</span> <span id="previous">---</span></p>
+        </div>
+        </div>
+
+       <div class="common" id="play">
+          <div class='top'></div>
+          <div class='bottom'>
+          <p class='dots'>Play</p>
+          
+		  <p class='adjust'><span id='current'>---</span> <span id="previous">---</span></p>
+          </div>
+        </div>
+
+        <div class="common" id="study">
+          <div class='top'></div>
+          <div class='bottom'>
+          <p class='dots'>Study</p>
+          
+		  <p class='adjust'><span id='current'>---</span> <span id="previous">---</span></p>
+        </div>
+		</div>
+
+        <div class="common" id="exercise">
+          <div class='top'></div>
+          <div class='bottom'>
+          <p class='dots'>Exercise</p>
+          
+          <p class='adjust'><span id='current'>---</span> <span id="previous">---</span></p>
+        </div>
+		</div>
+
+        <div class='common' id="social">
+          <div class='top'></div>
+          <div class='bottom'>
+          <p class='dots'>Social</p>
+          
+		  <p class='adjust'><span id='current'>---</span> <span id="previous">---</span></p>
+        </div>
+		</div>
+        <div class="common" id="self-care">
+          <div class='top'></div>
+          <div class='bottom'>
+          <p class='dots'>Self-care</p>
+          
+		  <p class='adjust'><span id='current'>---</span> <span id="previous">---</span></p>
+        </div>
+      </div>
+	</div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Adebisi Oluwafemi</a>.
+    </div>
+  </body>
+  <script src= 'script.js'></script>
+</html>
